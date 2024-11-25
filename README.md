@@ -1,4 +1,3 @@
-Below is the `README.md` file based on the provided documentation:
 
 ---
 
@@ -42,8 +41,8 @@ A RESTful API to manage and apply discount coupons for an e-commerce platform. T
 
 #### **Clone the Repository**
 ```bash
-git clone <repository-url>
-cd project-directory
+git clone https://github.com/mangalverma/coupon_management.git
+cd coupon_management
 ```
 
 #### **Run Locally**
@@ -82,8 +81,7 @@ cd project-directory
 | POST   | `/coupons`     | Create a new coupon          |
 | GET    | `/coupons`     | Retrieve all coupons         |
 | GET    | `/coupons/{id}`| Retrieve a specific coupon   |
-| PUT    | `/coupons/{id}`| Update a specific coupon     |
-| DELETE | `/coupons/{id}`| Delete a specific coupon     |
+
 
 ### **Coupon Application**
 | Method | Endpoint                | Description                      |
@@ -144,7 +142,7 @@ cd project-directory
 ## Testing
 
 ### **Postman**
-1. Import the `postman_collection.json` provided in the repository.
+1. Import the `coupon_management/postman_API/api.json` provided in the repository.
 2. Use pre-configured requests to test the API.
 
 ---
