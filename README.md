@@ -161,11 +161,3 @@ cd coupon_management
 2. **User-Specific Coupons**: Add user targeting for personalized coupons.
 3. **Advanced Logging**: Enhance logging for better debugging and analytics.
 
----
-
-## License
-This project is licensed under the MIT License.
-
----
-
-Copy and save the above content as `README.md` in your project directory. Let me know if you need further customization or help!
