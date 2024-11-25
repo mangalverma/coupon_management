@@ -64,11 +64,13 @@ cd coupon_management
    - Redoc: [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 #### **Run with Docker**
-1. Build the Docker image:
+1. download the docker build file from given url (https://drive.google.com/drive/folders/17-FhzCbhbpQDnUnseyzu-qJwzO6jMYOr?usp=drive_link):
+   
+2. load the docker file using below command :
    ```bash
-   docker-compose up --build
+   docker load -i coupon_generator.tar
    ```
-2. Access the API:
+3. Access the API:
    - Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
