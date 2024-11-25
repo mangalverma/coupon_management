@@ -1,0 +1,10 @@
+id,user,username,password,is_ignore
+1,user1,username1,password1,FALSE
+2,user2,username2,password2,FALSE
+3,user3,username3,password3,FALSE
+4,user4,username4,password4,FALSE
+5,user5,username5,password5,FALSE
+6,user6,username6,password6,FALSE
+7,user7,username7,password7,FALSE
+8,user8,username8,password8,FALSE
+9,user9,username9,password9,FALSE

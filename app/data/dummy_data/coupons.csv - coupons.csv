@@ -1,0 +1,4 @@
+id,type,details,expiration_date,created_at,updated_at
+1,cart-wise,"{""threshold"": 100, ""discount"": 10}",2024-12-31,2024-11-01,2024-11-01
+2,product-wise,"{""product_id"": 1, ""discount"": 20}",2024-12-31,2024-11-01,2024-11-01
+3,bxgy,"{""buy_products"": [{""product_id"": 1, ""quantity"": 3}], ""get_products"": [{""product_id"": 3, ""quantity"": 1}], ""repition_limit"": 2}",2024-12-31,2024-11-01,2024-11-01

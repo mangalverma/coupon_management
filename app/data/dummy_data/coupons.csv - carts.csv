@@ -1,0 +1,4 @@
+id,items
+1,"[{""product_id"": 1, ""quantity"": 6, ""price"": 50}, {""product_id"": 2, ""quantity"": 3, ""price"": 30}, {""product_id"": 3, ""quantity"": 2, ""price"": 25}]"
+2,"[{""product_id"": 4, ""quantity"": 1, ""price"": 100}, {""product_id"": 5, ""quantity"": 2, ""price"": 60}]"
+3,"[{""product_id"": 1, ""quantity"": 3, ""price"": 50}, {""product_id"": 3, ""quantity"": 1, ""price"": 25}]"

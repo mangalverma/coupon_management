@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "27ae3da3-a549-41f1-b744-68a17631d493",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39993841"
+	},
+	"item": [
+		{
+			"name": "appllicable_coupons",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"accept-encoding": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": \"[{\\\"product_id\\\":2,\\\"quantity\\\":10}]\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5002/applicable-coupons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"applicable-coupons"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "'{\"items\": \"[{\\\"product_id\\\":2,\\\"quantity\\\":10}]\"}'",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5002/applicable-coupons",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"items\": \"[{\\\"product_id\\\":2,\\\"quantity\\\":10}]\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5002/applicable-coupons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"applicable-coupons"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "'{\"items\": \"[{\\\"product_id\\\":2,\\\"quantity\\\":10}]\"}'",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "date",
+							"value": "Mon, 25 Nov 2024 17:43:26 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "126"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"applicable_coupons\": [\n        {\n            \"coupon_id\": 1,\n            \"type\": \"cart-wise\",\n            \"discount\": 30\n        },\n        {\n            \"coupon_id\": 4,\n            \"type\": \"cart-wise\",\n            \"discount\": 60\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get_all_coupons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:5002/coupons\n",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5002",
+					"path": [
+						"coupons\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_coupons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"type\": \"cart-wise\",\n  \"details\": \"{\\\"threshold\\\":200,\\\"discount\\\":20}\",\n  \"expiration_date\": \"2024-11-25T16:39:37.159Z\",\n  \"created_date\": \"2024-11-25T16:39:37.159Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5002/coupons",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5002",
+					"path": [
+						"coupons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "apply_coupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": \"[{\\\"product_id\\\":2,\\\"quantity\\\":10}]\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:5002/apply-coupon/{id}?coupon_id=4",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "5002",
+					"path": [
+						"apply-coupon",
+						"{id}"
+					],
+					"query": [
+						{
+							"key": "coupon_id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
